@@ -33,7 +33,7 @@ sira = 1
 sutun = 0
 
 for i in liste:
-    komut = lambda x=i: hesapla(x)  # düzeltilmiş lambda ifadesi
+    komut = lambda x=i: hesapla(x)  
     Button(text=i, font="verdana 8 bold", width=10, height=2, relief=GROOVE, command=komut).grid(row=sira, column=sutun)
     sutun += 1
     if sutun > 3:
